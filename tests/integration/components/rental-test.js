@@ -9,25 +9,25 @@ module('Integration | Component | rental', function(hooks) {
   test('it renders information about a rental property', async function (assert) {
     this.setProperties({
       rental: {
-        title: 'Grand Old Mansion',
+        title: 'Antiga Grande Mansão',
         owner: 'Veruca Salt',
-        city: 'San Francisco',
+        city: 'São Francisco',
         location: {
           lat: 37.7749,
           lng: -122.4194,
         },
-        category: 'Estate',
-        type: 'Standalone',
+        category: 'Propriedade',
+        type: 'Privado',
         bedrooms: 15,
         image:
           'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg',
         description:
-          'This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests.',
+          'Esta grande mansão contempla mais de 40 hectares de colinas e densas florestas de sequoias.',
       },
     });
 
     await render(hbs`<Rental @rental={{this.rental}} />`);
-    
+
     assert.dom('article').hasClass('rental');
     assert.dom('article .details h3').hasText('Antiga Mansão Grande');
     assert.dom('article .detail.owner').includesText('Veruca Salt');
