@@ -3,18 +3,18 @@ import Route from '@ember/routing/route';
 export default class IndexRoute extends Route {
     async model() {
         return {
-          title: 'Grand Old Mansion',
+          title: 'Antiga Grande Mansão',
           owner: 'Veruca Salt',
-          city: 'San Francisco',
+          city: 'São Francisco',
           location: {
             lat: 37.7749,
             lng: -122.4194,
           },
-          category: 'Estate',
-          type: 'Standalone',
+          category: 'Propriedade',
+          type: 'Privado',
           bedrooms: 15,
           image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg',
-          description: 'This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests.',
+          description: 'Esta grande mansão contempla mais de 40 hectares de colinas e densas florestas de sequoias.',
         };
     }
 }
