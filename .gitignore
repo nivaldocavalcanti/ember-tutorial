@@ -26,4 +26,4 @@
 /package.json.ember-try
 
 .DS_Store
-config/environment.js
+/config/environment.js
