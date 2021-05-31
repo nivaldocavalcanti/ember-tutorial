@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "rentals",
+    "id": "downtown-charm",
+    "attributes": {
+      "title": "Charme do centro",
+      "owner": "Violet Beauregarde",
+      "city": "Portland",
+      "location": {
+        "lat": 45.5175,
+        "lng": -122.6801
+      },
+      "category": "Apartamento",
+      "bedrooms": 3,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg",
+      "description": "A conveniência está à sua porta com este aluguel no charme do centro. Ótimos restaurantes e vida noturna agitada estão a poucos metros."
+    }
+  }
+}
